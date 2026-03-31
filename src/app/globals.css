@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #1b2b4b;
+  --color-brand-green: #4caf50;
+  --color-brand-green-dark: #2e7d32;
+  --color-brand-red: #c62828;
+  --color-brand-teal: #b2ebf2;
+
+  --font-family-sans: "Inter", system-ui, sans-serif;
+
+  --background-image-teal-gradient: linear-gradient(135deg, #ffffff 0%, #b2ebf2 100%);
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: #f9fafb;
+}
+
+/* Leaflet fixes */
+.leaflet-container {
+  z-index: 0;
+}
+
+/* Scrollbar hide utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
